@@ -37,8 +37,8 @@
 
     - name: "Apply role users"
       ansible.builtin.include_role:
-        name: idm_user_groups
-
+        name: idm_users
+        
     - name: "Apply role user_groups"
       ansible.builtin.include_role:
         name: idm_user_groups
@@ -67,6 +67,6 @@
       ansible.builtin.include_role:
         name: idm_sudo_policy
 
-    - name: "Apply dns setup"
-      ansible.builtin.include_role:
-        name: dns_setup
+    # - name: "Apply dns setup"
+    #   ansible.builtin.include_role:
+    #     name: dns_setup

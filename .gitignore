@@ -3,3 +3,9 @@ ansible.cfg
 rhis-builder-idm.code-workspace
 settings.json
 
+# Vault files (contain secrets)
+*vault.yml
+rhisbuilder_vault.yml
+!*SAMPLE*.yml
+!*template*.yml
+
